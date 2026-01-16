@@ -1,7 +1,257 @@
 # Summary
 
-In summary, this book has no content whatsoever.
+# Dominant Strategies & The Prisoner's Dilemma
+A **dominant strategy** is one that is best for a player regardless of what the other players does.The most famous example is the **Prisoner’s Dilemma**.
 
-```{r}
-1 + 1
-```
+## The Classic Prisoner's Dilemma
+Two prisoners are separated and interrogated. Each must choose:- **Confess (Rat)**- **Deny (Stay Silent)** If both stay silent, they receive light sentences.  If one confesses and the other stays silent, the confessor is rewarded and the silent prisoner receives a harsh sentence.  If both confess, they receive moderate sentences. The dominant strategy for each is to **confess**, even though both would prefer the outcome where they remain silent. This logic also applies to:- Joint projects where working is costly  - Environmental agreements  - Price competition  - Public‑goods situations. A dominated strategy is one that **always yields a lower payoff** than another. In the Prisoner’s Dilemma, *staying silent* is dominated. The tragedy is that **individual incentives destroy collective welfare**.
+
+
+# Nash Equilibrium
+A **Nash equilibrium** is a set of strategies where no player wants to deviate unilaterally.
+
+At equilibrium, each player's choice is a *best response* to the other’s.
+
+## Payoff Matrices
+
+A typical 2×2 game is represented as:
+
+|           | Player 2: L | Player 2: R |
+|-----------|--------------|-------------|
+| **Player 1: U** | (a, b)        | (c, d)       |
+| **Player 1: D** | (e, f)        | (g, h)       |
+
+We search for strategy pairs where each player is doing the best possible given
+the other’s choice.
+
+## Examples
+
+### Hawk–Dove (a conflict game)
+
+Both players benefit if one yields, but not if both fight.  
+Multiple Nash equilibria may exist.
+
+### Games from the notes:  
+- Price competition  
+- Basic battle outcomes  
+- Economic policy decisions (interest rates, spending)
+
+Nash equilibrium captures **strategic stability**:  
+*no one has an incentive to move away from the current outcome*.
+``
+
+
+# Coordination & Anti‑Coordination Games
+
+Some games require **alignment** rather than conflict.
+
+## Coordination Game
+
+Two students must choose the same “flat tire” explanation when questioned.
+Success depends on coordinating answers.
+
+Coordination problems arise when:
+
+- Driving conventions (left vs right)  
+- Technology adoption  
+- Business standards  
+- Social norms  
+
+Failure to coordinate leads to poor outcomes.
+
+## Battle of the Sexes
+
+Two players want to meet but prefer different activities.  
+There are **two Nash equilibria**, reflecting mutual desire to coordinate.
+
+**Focal points** help players select between multiple equilibria, relying on:
+
+- Tradition  
+- Logic  
+- Cultural expectations  
+
+## Matching Pennies (Anti‑Coordination)
+
+A pure conflict game where the players want **opposite** outcomes.  
+There is **no pure‑strategy Nash equilibrium**.
+
+This motivates **mixed strategies**, covered in the next chapter.
+``
+
+
+# Mixed Strategies
+
+When no pure‑strategy Nash equilibrium exists, players may randomize.
+
+A **mixed strategy** assigns probabilities to each pure action.
+
+## Example: Penalty Kick
+
+The kicker chooses left or right.  
+The keeper dives left or right.
+
+If the keeper can perfectly predict the kicker’s choice, the kicker always loses.
+Thus the kicker must **randomize**.
+
+Let:
+
+- p = probability the keeper dives left  
+- (1 − p) = probability the keeper dives right  
+
+The kicker chooses probabilities that make the keeper indifferent.
+The keeper does the same.
+
+The equilibrium occurs when both choose each side **with probability 1/2**.
+
+## Battle of the Sexes (Mixed)
+
+When multiple pure equilibria exist, there is also a **mixed equilibrium**
+determined by equating expected payoffs.
+
+Mixed strategies reflect:
+
+- unpredictability  
+- strategic concealment  
+- balancing incentives  
+
+They are fundamental in competitive environments such as sports, auctions, and
+military conflict.
+
+
+# Sequential Games & Backward Induction
+
+Sequential games involve moves made **over time**, with later players observing
+earlier actions.
+
+The key tool is **backward induction**:  
+Start from the final decision and reason backward.
+
+## Game Trees
+
+A game tree includes:
+
+- decision nodes  
+- branches representing actions  
+- terminal nodes with payoffs  
+
+Examples:
+
+### 1. One‑on‑One Poker
+
+A player bets, the opponent folds or calls.  
+Backward induction identifies credible strategies.
+
+### 2. Investment Project
+
+Player 1 invests funds; Player 2 either uses them properly or steals.
+
+If the temptation is too high, stealing becomes rational, preventing investment.
+
+Solutions include:
+
+- collateral  
+- profit‑sharing  
+- small project size  
+
+These modify incentives to restore cooperation.
+
+Sequential games also help model **commitment**:  
+By burning bridges (literally in one example), a player removes future options to
+make current threats credible.
+``
+
+
+# Repeated Games & Cooperation Over Time
+
+Many strategic interactions repeat over time.
+
+Repeated games allow cooperation even when one‑shot incentives favor defection.
+
+## Trigger Strategies
+
+Two important strategies:
+
+1. **Tit for Tat** — start cooperative, then copy the opponent’s last move  
+2. **Grim Trigger** — cooperate until the opponent defects once, then punish forever  
+
+## Finite Horizon
+
+If the game is repeated a known number of periods, backward induction collapses the entire game: defection occurs every round.
+
+## Infinite or Indefinite Horizon
+
+If players are uncertain when the game will end, cooperation becomes sustainable.
+
+Let:
+
+- δ = probability the game continues another round (discount factor)
+
+Cooperation is sustainable when:
+Cooperative payoff ≥ Deviation payoff + Future punishment loss
+
+This yields inequalities like:
+
+δ ≥ threshold
+
+The exact threshold depends on payoffs.
+
+Repeated games explain:
+
+- reputation  
+- trust  
+- collusion  
+- environmental agreements  
+- long‑run cooperation  
+
+
+# Applications & Classroom Games
+
+This chapter explores real‑world and classroom applications of game theory.
+
+## 1. The Pizza Contribution Game
+
+Three students decide whether to contribute money for pizza.
+
+If at least two contribute, all benefit.  
+If few contribute, the public good fails.
+
+This creates:
+
+- multiple Nash equilibria  
+- free‑riding incentives  
+- first‑mover advantages  
+
+## 2. Pollution & Abatement
+
+Countries choose whether to pollute or abate.  
+Pollution is individually tempting but collectively harmful.
+
+This is a Prisoner’s Dilemma variant.
+
+## 3. Price Competition
+
+Firms can choose high or low prices.  
+Low prices may dominate, leading to competitive races.
+
+## 4. The Guess‑2/3‑of‑the‑Average Game
+
+Students choose numbers from 1 to 100.  
+Winner is closest to **2/3 of the class average**.
+
+Iterated reasoning leads to the Nash equilibrium of **1**.
+
+## 5. The Lions and Sheep Puzzle
+
+A chain of lions consider eating the sheep.  
+Backward induction determines which lions act.
+
+## 6. Bridge‑Burning in Invasion Games
+
+A country commits to fighting by destroying its retreat path.  
+Removing the option to retreat changes equilibrium behavior.
+
+Game theory highlights how **changing the rules** changes the outcome.
+``
+
+
+
