@@ -1,0 +1,192 @@
+[
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "3 Dominant Strategies & The Prisoner’s Dilemma\nA dominant strategy is one that is best for a player regardless of what the other players does.The most famous example is the Prisoner’s Dilemma.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#the-classic-prisoners-dilemma",
+    "href": "summary.html#the-classic-prisoners-dilemma",
+    "title": "2  Summary",
+    "section": "3.1 The Classic Prisoner’s Dilemma",
+    "text": "3.1 The Classic Prisoner’s Dilemma\nTwo prisoners are separated and interrogated. Each must choose:- Confess (Rat)- Deny (Stay Silent) If both stay silent, they receive light sentences. If one confesses and the other stays silent, the confessor is rewarded and the silent prisoner receives a harsh sentence. If both confess, they receive moderate sentences. The dominant strategy for each is to confess, even though both would prefer the outcome where they remain silent. This logic also applies to:- Joint projects where working is costly - Environmental agreements - Price competition - Public‑goods situations. A dominated strategy is one that always yields a lower payoff than another. In the Prisoner’s Dilemma, staying silent is dominated. The tragedy is that individual incentives destroy collective welfare.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#payoff-matrices",
+    "href": "summary.html#payoff-matrices",
+    "title": "2  Summary",
+    "section": "4.1 Payoff Matrices",
+    "text": "4.1 Payoff Matrices\nA typical 2×2 game is represented as:\n\n\n\n\nPlayer 2: L\nPlayer 2: R\n\n\n\n\nPlayer 1: U\n(a, b)\n(c, d)\n\n\nPlayer 1: D\n(e, f)\n(g, h)\n\n\n\nWe search for strategy pairs where each player is doing the best possible given the other’s choice.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#examples",
+    "href": "summary.html#examples",
+    "title": "2  Summary",
+    "section": "4.2 Examples",
+    "text": "4.2 Examples\n\n4.2.1 Hawk–Dove (a conflict game)\nBoth players benefit if one yields, but not if both fight.\nMultiple Nash equilibria may exist.\n\n\n4.2.2 Games from the notes:\n\nPrice competition\n\nBasic battle outcomes\n\nEconomic policy decisions (interest rates, spending)\n\nNash equilibrium captures strategic stability:\nno one has an incentive to move away from the current outcome. ``",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#coordination-game",
+    "href": "summary.html#coordination-game",
+    "title": "2  Summary",
+    "section": "5.1 Coordination Game",
+    "text": "5.1 Coordination Game\nTwo students must choose the same “flat tire” explanation when questioned. Success depends on coordinating answers.\nCoordination problems arise when:\n\nDriving conventions (left vs right)\n\nTechnology adoption\n\nBusiness standards\n\nSocial norms\n\nFailure to coordinate leads to poor outcomes.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#battle-of-the-sexes",
+    "href": "summary.html#battle-of-the-sexes",
+    "title": "2  Summary",
+    "section": "5.2 Battle of the Sexes",
+    "text": "5.2 Battle of the Sexes\nTwo players want to meet but prefer different activities.\nThere are two Nash equilibria, reflecting mutual desire to coordinate.\nFocal points help players select between multiple equilibria, relying on:\n\nTradition\n\nLogic\n\nCultural expectations",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#matching-pennies-anticoordination",
+    "href": "summary.html#matching-pennies-anticoordination",
+    "title": "2  Summary",
+    "section": "5.3 Matching Pennies (Anti‑Coordination)",
+    "text": "5.3 Matching Pennies (Anti‑Coordination)\nA pure conflict game where the players want opposite outcomes.\nThere is no pure‑strategy Nash equilibrium.\nThis motivates mixed strategies, covered in the next chapter. ``",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#example-penalty-kick",
+    "href": "summary.html#example-penalty-kick",
+    "title": "2  Summary",
+    "section": "6.1 Example: Penalty Kick",
+    "text": "6.1 Example: Penalty Kick\nThe kicker chooses left or right.\nThe keeper dives left or right.\nIf the keeper can perfectly predict the kicker’s choice, the kicker always loses. Thus the kicker must randomize.\nLet:\n\np = probability the keeper dives left\n\n(1 − p) = probability the keeper dives right\n\nThe kicker chooses probabilities that make the keeper indifferent. The keeper does the same.\nThe equilibrium occurs when both choose each side with probability 1/2.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#battle-of-the-sexes-mixed",
+    "href": "summary.html#battle-of-the-sexes-mixed",
+    "title": "2  Summary",
+    "section": "6.2 Battle of the Sexes (Mixed)",
+    "text": "6.2 Battle of the Sexes (Mixed)\nWhen multiple pure equilibria exist, there is also a mixed equilibrium determined by equating expected payoffs.\nMixed strategies reflect:\n\nunpredictability\n\nstrategic concealment\n\nbalancing incentives\n\nThey are fundamental in competitive environments such as sports, auctions, and military conflict.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#game-trees",
+    "href": "summary.html#game-trees",
+    "title": "2  Summary",
+    "section": "7.1 Game Trees",
+    "text": "7.1 Game Trees\nA game tree includes:\n\ndecision nodes\n\nbranches representing actions\n\nterminal nodes with payoffs\n\nExamples:\n\n7.1.1 1. One‑on‑One Poker\nA player bets, the opponent folds or calls.\nBackward induction identifies credible strategies.\n\n\n7.1.2 2. Investment Project\nPlayer 1 invests funds; Player 2 either uses them properly or steals.\nIf the temptation is too high, stealing becomes rational, preventing investment.\nSolutions include:\n\ncollateral\n\nprofit‑sharing\n\nsmall project size\n\nThese modify incentives to restore cooperation.\nSequential games also help model commitment:\nBy burning bridges (literally in one example), a player removes future options to make current threats credible. ``",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#trigger-strategies",
+    "href": "summary.html#trigger-strategies",
+    "title": "2  Summary",
+    "section": "8.1 Trigger Strategies",
+    "text": "8.1 Trigger Strategies\nTwo important strategies:\n\nTit for Tat — start cooperative, then copy the opponent’s last move\n\nGrim Trigger — cooperate until the opponent defects once, then punish forever",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#finite-horizon",
+    "href": "summary.html#finite-horizon",
+    "title": "2  Summary",
+    "section": "8.2 Finite Horizon",
+    "text": "8.2 Finite Horizon\nIf the game is repeated a known number of periods, backward induction collapses the entire game: defection occurs every round.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#infinite-or-indefinite-horizon",
+    "href": "summary.html#infinite-or-indefinite-horizon",
+    "title": "2  Summary",
+    "section": "8.3 Infinite or Indefinite Horizon",
+    "text": "8.3 Infinite or Indefinite Horizon\nIf players are uncertain when the game will end, cooperation becomes sustainable.\nLet:\n\nδ = probability the game continues another round (discount factor)\n\nCooperation is sustainable when: Cooperative payoff ≥ Deviation payoff + Future punishment loss\nThis yields inequalities like:\nδ ≥ threshold\nThe exact threshold depends on payoffs.\nRepeated games explain:\n\nreputation\n\ntrust\n\ncollusion\n\nenvironmental agreements\n\nlong‑run cooperation",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#the-pizza-contribution-game",
+    "href": "summary.html#the-pizza-contribution-game",
+    "title": "2  Summary",
+    "section": "9.1 1. The Pizza Contribution Game",
+    "text": "9.1 1. The Pizza Contribution Game\nThree students decide whether to contribute money for pizza.\nIf at least two contribute, all benefit.\nIf few contribute, the public good fails.\nThis creates:\n\nmultiple Nash equilibria\n\nfree‑riding incentives\n\nfirst‑mover advantages",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#pollution-abatement",
+    "href": "summary.html#pollution-abatement",
+    "title": "2  Summary",
+    "section": "9.2 2. Pollution & Abatement",
+    "text": "9.2 2. Pollution & Abatement\nCountries choose whether to pollute or abate.\nPollution is individually tempting but collectively harmful.\nThis is a Prisoner’s Dilemma variant.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#price-competition",
+    "href": "summary.html#price-competition",
+    "title": "2  Summary",
+    "section": "9.3 3. Price Competition",
+    "text": "9.3 3. Price Competition\nFirms can choose high or low prices.\nLow prices may dominate, leading to competitive races.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#the-guess23oftheaverage-game",
+    "href": "summary.html#the-guess23oftheaverage-game",
+    "title": "2  Summary",
+    "section": "9.4 4. The Guess‑2/3‑of‑the‑Average Game",
+    "text": "9.4 4. The Guess‑2/3‑of‑the‑Average Game\nStudents choose numbers from 1 to 100.\nWinner is closest to 2/3 of the class average.\nIterated reasoning leads to the Nash equilibrium of 1.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#the-lions-and-sheep-puzzle",
+    "href": "summary.html#the-lions-and-sheep-puzzle",
+    "title": "2  Summary",
+    "section": "9.5 5. The Lions and Sheep Puzzle",
+    "text": "9.5 5. The Lions and Sheep Puzzle\nA chain of lions consider eating the sheep.\nBackward induction determines which lions act.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#bridgeburning-in-invasion-games",
+    "href": "summary.html#bridgeburning-in-invasion-games",
+    "title": "2  Summary",
+    "section": "9.6 6. Bridge‑Burning in Invasion Games",
+    "text": "9.6 6. Bridge‑Burning in Invasion Games\nA country commits to fighting by destroying its retreat path.\nRemoving the option to retreat changes equilibrium behavior.\nGame theory highlights how changing the rules changes the outcome. ``",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  }
+]

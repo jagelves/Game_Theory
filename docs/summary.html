@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -169,8 +135,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#dominant-strategies-the-prisoners-dilemma" id="toc-dominant-strategies-the-prisoners-dilemma" class="nav-link active" data-scroll-target="#dominant-strategies-the-prisoners-dilemma"><span class="header-section-number">3</span> Dominant Strategies &amp; The Prisoner’s Dilemma</a>
+  <ul class="collapse">
+  <li><a href="#the-classic-prisoners-dilemma" id="toc-the-classic-prisoners-dilemma" class="nav-link" data-scroll-target="#the-classic-prisoners-dilemma"><span class="header-section-number">3.1</span> The Classic Prisoner’s Dilemma</a></li>
+  </ul></li>
+  <li><a href="#nash-equilibrium" id="toc-nash-equilibrium" class="nav-link" data-scroll-target="#nash-equilibrium"><span class="header-section-number">4</span> Nash Equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#payoff-matrices" id="toc-payoff-matrices" class="nav-link" data-scroll-target="#payoff-matrices"><span class="header-section-number">4.1</span> Payoff Matrices</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">4.2</span> Examples</a>
+  <ul class="collapse">
+  <li><a href="#hawkdove-a-conflict-game" id="toc-hawkdove-a-conflict-game" class="nav-link" data-scroll-target="#hawkdove-a-conflict-game"><span class="header-section-number">4.2.1</span> Hawk–Dove (a conflict game)</a></li>
+  <li><a href="#games-from-the-notes" id="toc-games-from-the-notes" class="nav-link" data-scroll-target="#games-from-the-notes"><span class="header-section-number">4.2.2</span> Games from the notes:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#coordination-anticoordination-games" id="toc-coordination-anticoordination-games" class="nav-link" data-scroll-target="#coordination-anticoordination-games"><span class="header-section-number">5</span> Coordination &amp; Anti‑Coordination Games</a>
+  <ul class="collapse">
+  <li><a href="#coordination-game" id="toc-coordination-game" class="nav-link" data-scroll-target="#coordination-game"><span class="header-section-number">5.1</span> Coordination Game</a></li>
+  <li><a href="#battle-of-the-sexes" id="toc-battle-of-the-sexes" class="nav-link" data-scroll-target="#battle-of-the-sexes"><span class="header-section-number">5.2</span> Battle of the Sexes</a></li>
+  <li><a href="#matching-pennies-anticoordination" id="toc-matching-pennies-anticoordination" class="nav-link" data-scroll-target="#matching-pennies-anticoordination"><span class="header-section-number">5.3</span> Matching Pennies (Anti‑Coordination)</a></li>
+  </ul></li>
+  <li><a href="#mixed-strategies" id="toc-mixed-strategies" class="nav-link" data-scroll-target="#mixed-strategies"><span class="header-section-number">6</span> Mixed Strategies</a>
+  <ul class="collapse">
+  <li><a href="#example-penalty-kick" id="toc-example-penalty-kick" class="nav-link" data-scroll-target="#example-penalty-kick"><span class="header-section-number">6.1</span> Example: Penalty Kick</a></li>
+  <li><a href="#battle-of-the-sexes-mixed" id="toc-battle-of-the-sexes-mixed" class="nav-link" data-scroll-target="#battle-of-the-sexes-mixed"><span class="header-section-number">6.2</span> Battle of the Sexes (Mixed)</a></li>
+  </ul></li>
+  <li><a href="#sequential-games-backward-induction" id="toc-sequential-games-backward-induction" class="nav-link" data-scroll-target="#sequential-games-backward-induction"><span class="header-section-number">7</span> Sequential Games &amp; Backward Induction</a>
+  <ul class="collapse">
+  <li><a href="#game-trees" id="toc-game-trees" class="nav-link" data-scroll-target="#game-trees"><span class="header-section-number">7.1</span> Game Trees</a>
+  <ul class="collapse">
+  <li><a href="#oneonone-poker" id="toc-oneonone-poker" class="nav-link" data-scroll-target="#oneonone-poker"><span class="header-section-number">7.1.1</span> 1. One‑on‑One Poker</a></li>
+  <li><a href="#investment-project" id="toc-investment-project" class="nav-link" data-scroll-target="#investment-project"><span class="header-section-number">7.1.2</span> 2. Investment Project</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#repeated-games-cooperation-over-time" id="toc-repeated-games-cooperation-over-time" class="nav-link" data-scroll-target="#repeated-games-cooperation-over-time"><span class="header-section-number">8</span> Repeated Games &amp; Cooperation Over Time</a>
+  <ul class="collapse">
+  <li><a href="#trigger-strategies" id="toc-trigger-strategies" class="nav-link" data-scroll-target="#trigger-strategies"><span class="header-section-number">8.1</span> Trigger Strategies</a></li>
+  <li><a href="#finite-horizon" id="toc-finite-horizon" class="nav-link" data-scroll-target="#finite-horizon"><span class="header-section-number">8.2</span> Finite Horizon</a></li>
+  <li><a href="#infinite-or-indefinite-horizon" id="toc-infinite-or-indefinite-horizon" class="nav-link" data-scroll-target="#infinite-or-indefinite-horizon"><span class="header-section-number">8.3</span> Infinite or Indefinite Horizon</a></li>
+  </ul></li>
+  <li><a href="#applications-classroom-games" id="toc-applications-classroom-games" class="nav-link" data-scroll-target="#applications-classroom-games"><span class="header-section-number">9</span> Applications &amp; Classroom Games</a>
+  <ul class="collapse">
+  <li><a href="#the-pizza-contribution-game" id="toc-the-pizza-contribution-game" class="nav-link" data-scroll-target="#the-pizza-contribution-game"><span class="header-section-number">9.1</span> 1. The Pizza Contribution Game</a></li>
+  <li><a href="#pollution-abatement" id="toc-pollution-abatement" class="nav-link" data-scroll-target="#pollution-abatement"><span class="header-section-number">9.2</span> 2. Pollution &amp; Abatement</a></li>
+  <li><a href="#price-competition" id="toc-price-competition" class="nav-link" data-scroll-target="#price-competition"><span class="header-section-number">9.3</span> 3. Price Competition</a></li>
+  <li><a href="#the-guess23oftheaverage-game" id="toc-the-guess23oftheaverage-game" class="nav-link" data-scroll-target="#the-guess23oftheaverage-game"><span class="header-section-number">9.4</span> 4. The Guess‑2/3‑of‑the‑Average Game</a></li>
+  <li><a href="#the-lions-and-sheep-puzzle" id="toc-the-lions-and-sheep-puzzle" class="nav-link" data-scroll-target="#the-lions-and-sheep-puzzle"><span class="header-section-number">9.5</span> 5. The Lions and Sheep Puzzle</a></li>
+  <li><a href="#bridgeburning-in-invasion-games" id="toc-bridgeburning-in-invasion-games" class="nav-link" data-scroll-target="#bridgeburning-in-invasion-games"><span class="header-section-number">9.6</span> 6. Bridge‑Burning in Invasion Games</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -194,15 +212,264 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In summary, this book has no content whatsoever.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="dominant-strategies-the-prisoners-dilemma" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Dominant Strategies &amp; The Prisoner’s Dilemma</h1>
+<p>A <strong>dominant strategy</strong> is one that is best for a player regardless of what the other players does.The most famous example is the <strong>Prisoner’s Dilemma</strong>.</p>
+<section id="the-classic-prisoners-dilemma" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="the-classic-prisoners-dilemma"><span class="header-section-number">3.1</span> The Classic Prisoner’s Dilemma</h2>
+<p>Two prisoners are separated and interrogated. Each must choose:- <strong>Confess (Rat)</strong>- <strong>Deny (Stay Silent)</strong> If both stay silent, they receive light sentences. If one confesses and the other stays silent, the confessor is rewarded and the silent prisoner receives a harsh sentence. If both confess, they receive moderate sentences. The dominant strategy for each is to <strong>confess</strong>, even though both would prefer the outcome where they remain silent. This logic also applies to:- Joint projects where working is costly - Environmental agreements - Price competition - Public‑goods situations. A dominated strategy is one that <strong>always yields a lower payoff</strong> than another. In the Prisoner’s Dilemma, <em>staying silent</em> is dominated. The tragedy is that <strong>individual incentives destroy collective welfare</strong>.</p>
+</section>
+</section>
+<section id="nash-equilibrium" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Nash Equilibrium</h1>
+<p>A <strong>Nash equilibrium</strong> is a set of strategies where no player wants to deviate unilaterally.</p>
+<p>At equilibrium, each player’s choice is a <em>best response</em> to the other’s.</p>
+<section id="payoff-matrices" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="payoff-matrices"><span class="header-section-number">4.1</span> Payoff Matrices</h2>
+<p>A typical 2×2 game is represented as:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Player 2: L</th>
+<th>Player 2: R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Player 1: U</strong></td>
+<td>(a, b)</td>
+<td>(c, d)</td>
+</tr>
+<tr class="even">
+<td><strong>Player 1: D</strong></td>
+<td>(e, f)</td>
+<td>(g, h)</td>
+</tr>
+</tbody>
+</table>
+<p>We search for strategy pairs where each player is doing the best possible given the other’s choice.</p>
+</section>
+<section id="examples" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="examples"><span class="header-section-number">4.2</span> Examples</h2>
+<section id="hawkdove-a-conflict-game" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="hawkdove-a-conflict-game"><span class="header-section-number">4.2.1</span> Hawk–Dove (a conflict game)</h3>
+<p>Both players benefit if one yields, but not if both fight.<br>
+Multiple Nash equilibria may exist.</p>
+</section>
+<section id="games-from-the-notes" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="games-from-the-notes"><span class="header-section-number">4.2.2</span> Games from the notes:</h3>
+<ul>
+<li>Price competition<br>
+</li>
+<li>Basic battle outcomes<br>
+</li>
+<li>Economic policy decisions (interest rates, spending)</li>
+</ul>
+<p>Nash equilibrium captures <strong>strategic stability</strong>:<br>
+<em>no one has an incentive to move away from the current outcome</em>. ``</p>
+</section>
+</section>
+</section>
+<section id="coordination-anticoordination-games" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Coordination &amp; Anti‑Coordination Games</h1>
+<p>Some games require <strong>alignment</strong> rather than conflict.</p>
+<section id="coordination-game" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="coordination-game"><span class="header-section-number">5.1</span> Coordination Game</h2>
+<p>Two students must choose the same “flat tire” explanation when questioned. Success depends on coordinating answers.</p>
+<p>Coordination problems arise when:</p>
+<ul>
+<li>Driving conventions (left vs right)<br>
+</li>
+<li>Technology adoption<br>
+</li>
+<li>Business standards<br>
+</li>
+<li>Social norms</li>
+</ul>
+<p>Failure to coordinate leads to poor outcomes.</p>
+</section>
+<section id="battle-of-the-sexes" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="battle-of-the-sexes"><span class="header-section-number">5.2</span> Battle of the Sexes</h2>
+<p>Two players want to meet but prefer different activities.<br>
+There are <strong>two Nash equilibria</strong>, reflecting mutual desire to coordinate.</p>
+<p><strong>Focal points</strong> help players select between multiple equilibria, relying on:</p>
+<ul>
+<li>Tradition<br>
+</li>
+<li>Logic<br>
+</li>
+<li>Cultural expectations</li>
+</ul>
+</section>
+<section id="matching-pennies-anticoordination" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="matching-pennies-anticoordination"><span class="header-section-number">5.3</span> Matching Pennies (Anti‑Coordination)</h2>
+<p>A pure conflict game where the players want <strong>opposite</strong> outcomes.<br>
+There is <strong>no pure‑strategy Nash equilibrium</strong>.</p>
+<p>This motivates <strong>mixed strategies</strong>, covered in the next chapter. ``</p>
+</section>
+</section>
+<section id="mixed-strategies" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Mixed Strategies</h1>
+<p>When no pure‑strategy Nash equilibrium exists, players may randomize.</p>
+<p>A <strong>mixed strategy</strong> assigns probabilities to each pure action.</p>
+<section id="example-penalty-kick" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="example-penalty-kick"><span class="header-section-number">6.1</span> Example: Penalty Kick</h2>
+<p>The kicker chooses left or right.<br>
+The keeper dives left or right.</p>
+<p>If the keeper can perfectly predict the kicker’s choice, the kicker always loses. Thus the kicker must <strong>randomize</strong>.</p>
+<p>Let:</p>
+<ul>
+<li>p = probability the keeper dives left<br>
+</li>
+<li>(1 − p) = probability the keeper dives right</li>
+</ul>
+<p>The kicker chooses probabilities that make the keeper indifferent. The keeper does the same.</p>
+<p>The equilibrium occurs when both choose each side <strong>with probability 1/2</strong>.</p>
+</section>
+<section id="battle-of-the-sexes-mixed" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="battle-of-the-sexes-mixed"><span class="header-section-number">6.2</span> Battle of the Sexes (Mixed)</h2>
+<p>When multiple pure equilibria exist, there is also a <strong>mixed equilibrium</strong> determined by equating expected payoffs.</p>
+<p>Mixed strategies reflect:</p>
+<ul>
+<li>unpredictability<br>
+</li>
+<li>strategic concealment<br>
+</li>
+<li>balancing incentives</li>
+</ul>
+<p>They are fundamental in competitive environments such as sports, auctions, and military conflict.</p>
+</section>
+</section>
+<section id="sequential-games-backward-induction" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Sequential Games &amp; Backward Induction</h1>
+<p>Sequential games involve moves made <strong>over time</strong>, with later players observing earlier actions.</p>
+<p>The key tool is <strong>backward induction</strong>:<br>
+Start from the final decision and reason backward.</p>
+<section id="game-trees" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="game-trees"><span class="header-section-number">7.1</span> Game Trees</h2>
+<p>A game tree includes:</p>
+<ul>
+<li>decision nodes<br>
+</li>
+<li>branches representing actions<br>
+</li>
+<li>terminal nodes with payoffs</li>
+</ul>
+<p>Examples:</p>
+<section id="oneonone-poker" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="oneonone-poker"><span class="header-section-number">7.1.1</span> 1. One‑on‑One Poker</h3>
+<p>A player bets, the opponent folds or calls.<br>
+Backward induction identifies credible strategies.</p>
+</section>
+<section id="investment-project" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="investment-project"><span class="header-section-number">7.1.2</span> 2. Investment Project</h3>
+<p>Player 1 invests funds; Player 2 either uses them properly or steals.</p>
+<p>If the temptation is too high, stealing becomes rational, preventing investment.</p>
+<p>Solutions include:</p>
+<ul>
+<li>collateral<br>
+</li>
+<li>profit‑sharing<br>
+</li>
+<li>small project size</li>
+</ul>
+<p>These modify incentives to restore cooperation.</p>
+<p>Sequential games also help model <strong>commitment</strong>:<br>
+By burning bridges (literally in one example), a player removes future options to make current threats credible. ``</p>
+</section>
+</section>
+</section>
+<section id="repeated-games-cooperation-over-time" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Repeated Games &amp; Cooperation Over Time</h1>
+<p>Many strategic interactions repeat over time.</p>
+<p>Repeated games allow cooperation even when one‑shot incentives favor defection.</p>
+<section id="trigger-strategies" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="trigger-strategies"><span class="header-section-number">8.1</span> Trigger Strategies</h2>
+<p>Two important strategies:</p>
+<ol type="1">
+<li><strong>Tit for Tat</strong> — start cooperative, then copy the opponent’s last move<br>
+</li>
+<li><strong>Grim Trigger</strong> — cooperate until the opponent defects once, then punish forever</li>
+</ol>
+</section>
+<section id="finite-horizon" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="finite-horizon"><span class="header-section-number">8.2</span> Finite Horizon</h2>
+<p>If the game is repeated a known number of periods, backward induction collapses the entire game: defection occurs every round.</p>
+</section>
+<section id="infinite-or-indefinite-horizon" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="infinite-or-indefinite-horizon"><span class="header-section-number">8.3</span> Infinite or Indefinite Horizon</h2>
+<p>If players are uncertain when the game will end, cooperation becomes sustainable.</p>
+<p>Let:</p>
+<ul>
+<li>δ = probability the game continues another round (discount factor)</li>
+</ul>
+<p>Cooperation is sustainable when: Cooperative payoff ≥ Deviation payoff + Future punishment loss</p>
+<p>This yields inequalities like:</p>
+<p>δ ≥ threshold</p>
+<p>The exact threshold depends on payoffs.</p>
+<p>Repeated games explain:</p>
+<ul>
+<li>reputation<br>
+</li>
+<li>trust<br>
+</li>
+<li>collusion<br>
+</li>
+<li>environmental agreements<br>
+</li>
+<li>long‑run cooperation</li>
+</ul>
+</section>
+</section>
+<section id="applications-classroom-games" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Applications &amp; Classroom Games</h1>
+<p>This chapter explores real‑world and classroom applications of game theory.</p>
+<section id="the-pizza-contribution-game" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="the-pizza-contribution-game"><span class="header-section-number">9.1</span> 1. The Pizza Contribution Game</h2>
+<p>Three students decide whether to contribute money for pizza.</p>
+<p>If at least two contribute, all benefit.<br>
+If few contribute, the public good fails.</p>
+<p>This creates:</p>
+<ul>
+<li>multiple Nash equilibria<br>
+</li>
+<li>free‑riding incentives<br>
+</li>
+<li>first‑mover advantages</li>
+</ul>
+</section>
+<section id="pollution-abatement" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="pollution-abatement"><span class="header-section-number">9.2</span> 2. Pollution &amp; Abatement</h2>
+<p>Countries choose whether to pollute or abate.<br>
+Pollution is individually tempting but collectively harmful.</p>
+<p>This is a Prisoner’s Dilemma variant.</p>
+</section>
+<section id="price-competition" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="price-competition"><span class="header-section-number">9.3</span> 3. Price Competition</h2>
+<p>Firms can choose high or low prices.<br>
+Low prices may dominate, leading to competitive races.</p>
+</section>
+<section id="the-guess23oftheaverage-game" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="the-guess23oftheaverage-game"><span class="header-section-number">9.4</span> 4. The Guess‑2/3‑of‑the‑Average Game</h2>
+<p>Students choose numbers from 1 to 100.<br>
+Winner is closest to <strong>2/3 of the class average</strong>.</p>
+<p>Iterated reasoning leads to the Nash equilibrium of <strong>1</strong>.</p>
+</section>
+<section id="the-lions-and-sheep-puzzle" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="the-lions-and-sheep-puzzle"><span class="header-section-number">9.5</span> 5. The Lions and Sheep Puzzle</h2>
+<p>A chain of lions consider eating the sheep.<br>
+Backward induction determines which lions act.</p>
+</section>
+<section id="bridgeburning-in-invasion-games" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="bridgeburning-in-invasion-games"><span class="header-section-number">9.6</span> 6. Bridge‑Burning in Invasion Games</h2>
+<p>A country commits to fighting by destroying its retreat path.<br>
+Removing the option to retreat changes equilibrium behavior.</p>
+<p>Game theory highlights how <strong>changing the rules</strong> changes the outcome. ``</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
