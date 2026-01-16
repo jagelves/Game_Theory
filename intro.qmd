@@ -1,9 +1,28 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+This book introduces the fundamental ideas of **game theory**—the study ofstrategic interaction between rational decision‑makers. The goal is to develop intuition first, mathematics second, and insight throughout.The chapters build progressively from simple ideas like dominant strategies to more advanced concepts such as sequential games, mixed strategies, and repeated interaction.
 
-See @knuth84 for additional discussion of literate programming.
 
-```{r}
-1 + 1
-```
+# Introduction to Game Theory
+Game theory studies **rational interactive decision‑making**.  Unlike standard optimization—where a decision affects only the outcome—game theory analyzes situations where **your outcome depends on the actions ofothers**. Examples include:
+- Athletes choosing tactics in sports  
+- Businesses setting prices or advertising levels  
+- Governments choosing spending, taxes, or military strategies  
+- Students choosing effort levels in a group project  
+- Everyday strategic choices such as which route to take or whether to cooperateGame theory separates two parts of performance:
+1. **Skill** — mechanical or physical ability  
+2. **Strategy** — anticipating and responding to others’ choices  
+
+This book focuses on the **strategic** part.
+## Games and Strategic Interaction
+A *game* is any situation with:
+- **Players**:decision makers  
+- **Actions**:choices available to each player **Strategies**:complete plans of action
+**Payoffs**:the benefits or consequences that result from the choices  
+**Rules**: who moves when, what they know, and how outcomes are determined. Throughout this book, we use examples such as:
+- Penalty kicks  
+- The Prisoner’s Dilemma  
+- Coordination problems  
+- Mixed strategies in competitive settings  
+- Sequential moves in investment or bargaining  
+- Repeated games with incentives to sustain cooperation  
