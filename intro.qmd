@@ -25,4 +25,5 @@ A *game* is any situation with:
 - Coordination problems  
 - Mixed strategies in competitive settings  
 - Sequential moves in investment or bargaining  
-- Repeated games with incentives to sustain cooperation  
+- Repeated games with incentives to sustain cooperation 
+
