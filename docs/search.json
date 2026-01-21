@@ -188,5 +188,25 @@
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
     ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This book introduces the fundamental ideas of game theory—the study of strategic interaction between rational decision‑makers. The goal is to develop intuition first, mathematics second, and insight throughout.The chapters build progressively from simple ideas like dominant strategies to more advanced concepts such as sequential games, mixed strategies, and repeated interaction.\n\n2 What is Game Theory?\nGame theory studies rational interactive decision‑making. Unlike standard optimization—where a decision affects only the outcome, game theory analyzes situations where your outcome depends on the actions of others. Examples include:\n\nAthletes choosing tactics in sports\n\nBusinesses setting prices or advertising levels\n\nGovernments choosing spending, taxes, or military strategies\nStudents choosing effort levels in a group project\n\nEveryday strategic choices such as which route to take or whether to cooperate\n\nGame theory separates two parts of performance:\n\nSkill — mechanical or physical ability\n\nStrategy — anticipating and responding to others’ choices\n\nThis book focuses on the strategic part and for the most part assumes that players have the skill to execute their actions.\n\n\n3 Definitions\nA game arises when a person is aware that his/her actions affect another individual and that the actions of the other individual(s) affect him/her. A game has the following components:\n\nPlayers: at least two decision makers\n\nActions: choices available to each player\nStrategies: complete plans of action\nPayoffs: the benefits or consequences that result from the choices\n\nRules: who moves when, what they know, and how outcomes are determined.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#games-and-strategic-interaction",
+    "href": "intro.html#games-and-strategic-interaction",
+    "title": "1  Introduction",
+    "section": "2.1 Games and Strategic Interaction",
+    "text": "2.1 Games and Strategic Interaction\nA game is any situation with: - Players:decision makers\n- Actions:choices available to each player Strategies:complete plans of action Payoffs:the benefits or consequences that result from the choices\nRules: who moves when, what they know, and how outcomes are determined. Throughout this book, we use examples such as: - Penalty kicks\n- The Prisoner’s Dilemma\n- Coordination problems\n- Mixed strategies in competitive settings\n- Sequential moves in investment or bargaining\n- Repeated games with incentives to sustain cooperation",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
   }
 ]
