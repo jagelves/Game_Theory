@@ -28,3 +28,7 @@ A *game* arises when a person is aware that his/her actions affect another indiv
 - **Payoffs**: the benefits or consequences that result from the choices  
 - **Rules**: who moves when, what they know, and how outcomes are determined. 
 
+# Classifying Games
+
+Games can be sequential or simultaneous. Games can have players' interests in complete conflict, or players' interested in cooperating with eachother.
+
