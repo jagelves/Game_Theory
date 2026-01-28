@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -82,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">GAME THEORY</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Decision‑Making Begins with One Rational Player</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,19 +139,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">GAME THEORY</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Decision‑Making Begins with One Rational Player</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -141,7 +170,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#game-theory" id="toc-game-theory" class="nav-link active" data-scroll-target="#game-theory">GAME THEORY</a></li>
+  <li><a href="#decisionmaking-begins-with-one-rational-player" id="toc-decisionmaking-begins-with-one-rational-player" class="nav-link active" data-scroll-target="#decisionmaking-begins-with-one-rational-player"><span class="header-section-number">0.1</span> Decision‑Making Begins with One Rational Player</a></li>
+  <li><a href="#a-first-example" id="toc-a-first-example" class="nav-link" data-scroll-target="#a-first-example"><span class="header-section-number">0.2</span> A First Example</a></li>
+  <li><a href="#decisions-almost-always-involve-uncertainty" id="toc-decisions-almost-always-involve-uncertainty" class="nav-link" data-scroll-target="#decisions-almost-always-involve-uncertainty"><span class="header-section-number">0.3</span> Decisions Almost Always Involve Uncertainty</a></li>
+  <li><a href="#expected-value-a-tool-for-rational-choice-under-uncertainty" id="toc-expected-value-a-tool-for-rational-choice-under-uncertainty" class="nav-link" data-scroll-target="#expected-value-a-tool-for-rational-choice-under-uncertainty"><span class="header-section-number">0.4</span> Expected Value: A Tool for Rational Choice Under Uncertainty</a></li>
+  <li><a href="#decision-trees-visualizing-sequential-decisions" id="toc-decision-trees-visualizing-sequential-decisions" class="nav-link" data-scroll-target="#decision-trees-visualizing-sequential-decisions"><span class="header-section-number">0.5</span> Decision Trees: Visualizing Sequential Decisions</a></li>
+  <li><a href="#from-individual-decisions-to-strategic-interaction" id="toc-from-individual-decisions-to-strategic-interaction" class="nav-link" data-scroll-target="#from-individual-decisions-to-strategic-interaction"><span class="header-section-number">0.6</span> From Individual Decisions to Strategic Interaction</a></li>
   </ul>
 </nav>
     </div>
@@ -179,9 +213,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="game-theory" class="level1 unnumbered">
-<h1 class="unnumbered">GAME THEORY</h1><p><img src="cover.png" title="Applied Game Theory" class="quarto-cover-image img-fluid"></p>
+<p><img src="cover.png" title="Applied Game Theory" class="quarto-cover-image img-fluid"></p>
+<p>Every day, whether we notice it or not, we make decisions: which route to take to school, whether to buy a coffee now or later, or whether to take an umbrella in case of rain. Some decisions are trivial; others—like choosing an investment, negotiating a contract, or launching a new product—have consequences that matter. Yet all of them share a common feature: we choose an action without fully knowing what the world will deliver in return.</p>
+<p>This book introduces a systematic way to think about such choices. We begin with the simplest setting—a single decision‑maker facing a well‑defined problem—and gradually build toward strategic environments, where multiple rational individuals interact. The goal is to build a foundation strong enough to support the more complex ideas of <strong>game theory</strong>, while ensuring the logic feels natural and intuitive.</p>
+<section id="decisionmaking-begins-with-one-rational-player" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="decisionmaking-begins-with-one-rational-player"><span class="header-section-number">0.1</span> Decision‑Making Begins with One Rational Player</h2>
+<p>Game theory ultimately studies how multiple decision‑makers interact, but the journey starts with just one of them. Before we analyze competition, negotiation, or conflict, we must first understand what it means for a lone decision‑maker to behave rationally.</p>
+<p>In this book, a decision‑maker is rational if:</p>
+<ol type="1">
+<li>They have well‑defined preferences about outcomes.</li>
+<li>They choose the action that leads to the most preferred available outcome.</li>
+</ol>
+<p>At its core, rationality is about consistency, not genius. A rational person can be misinformed, unlucky, optimistic, or pessimistic—but given what they believe and what they want, their decisions follow a coherent rule.</p>
+</section>
+<section id="a-first-example" class="level2" data-number="0.2">
+<h2 data-number="0.2" class="anchored" data-anchor-id="a-first-example"><span class="header-section-number">0.2</span> A First Example</h2>
+<p>Consider whether Tesla builds a new plant, expands an existing one, or does nothing. Even before uncertainty is added, a rational Tesla executive must:</p>
+<ol type="1">
+<li>Identify the available actions.</li>
+<li>Understand what consequences each action might produce.</li>
+<li>Choose the action that best serves the firm’s objective.</li>
+</ol>
+<p>This simple structure—actions → consequences → choice—is the backbone of rational decision theory.</p>
+</section>
+<section id="decisions-almost-always-involve-uncertainty" class="level2" data-number="0.3">
+<h2 data-number="0.3" class="anchored" data-anchor-id="decisions-almost-always-involve-uncertainty"><span class="header-section-number">0.3</span> Decisions Almost Always Involve Uncertainty</h2>
+<p>Of course, most decisions are not made in a world of certainties. Tesla does not know future market conditions. A restaurant-goer does not know if the meal will be good. A landowner considering a drilling offer cannot be sure whether gas lies beneath her property.</p>
+<p>Uncertainty enters because: - The world contains randomness. - We lack information. - Other people make unpredictable choices.</p>
+<p>To handle uncertainty rationally, we need a way to quantify it. This leads us to probability and the expected value.</p>
+</section>
+<section id="expected-value-a-tool-for-rational-choice-under-uncertainty" class="level2" data-number="0.4">
+<h2 data-number="0.4" class="anchored" data-anchor-id="expected-value-a-tool-for-rational-choice-under-uncertainty"><span class="header-section-number">0.4</span> Expected Value: A Tool for Rational Choice Under Uncertainty</h2>
+<p>When outcomes are uncertain, rational decision‑making requires comparing lotteries, gambles, or probabilistic scenarios. The simplest such comparison uses the <strong>Expected Value (EV)</strong></p>
+<p>The expected value of an uncertain outcome is the probability‑weighted average of all possible payoffs. For example, rolling a die with payoffs <span class="math inline">\(v = \{ −10, −10, −10, +10, +10, +50\}\)</span> has an EV of about 6.66. Two players flipping coins in a matching game both have an EV of zero. EV’s matter because they allow us to:</p>
+<ul>
+<li>Summarize uncertain choices with a single number.</li>
+<li>Compare and rank decisions.</li>
+<li>Choose the action with the highest average payoff.</li>
+</ul>
+</section>
+<section id="decision-trees-visualizing-sequential-decisions" class="level2" data-number="0.5">
+<h2 data-number="0.5" class="anchored" data-anchor-id="decision-trees-visualizing-sequential-decisions"><span class="header-section-number">0.5</span> Decision Trees: Visualizing Sequential Decisions</h2>
+<p>Many decisions unfold over time. New information becomes available, new options appear, and uncertainty resolves step by step. To analyze these scenarios, we use decision trees. A decision tree contains:</p>
+<ul>
+<li>Decision nodes (where the player chooses).</li>
+<li>Chance nodes (where uncertainty resolves).</li>
+<li>Payoff endpoints (final outcomes).</li>
+</ul>
+<p>To solve them, we use backward induction:</p>
+<ul>
+<li>Start at the right side of the tree.</li>
+<li>Compute EV at each chance node.</li>
+<li>Choose the best branch at each decision node.</li>
+<li>Continue backward until reaching the first decision.</li>
+</ul>
+<p>This method, also called folding back, ensures that a rational player makes the best decision at each step—even before the uncertainty is resolved.</p>
+</section>
+<section id="from-individual-decisions-to-strategic-interaction" class="level2" data-number="0.6">
+<h2 data-number="0.6" class="anchored" data-anchor-id="from-individual-decisions-to-strategic-interaction"><span class="header-section-number">0.6</span> From Individual Decisions to Strategic Interaction</h2>
+<p>Once we master single‑player decisions under uncertainty, we are ready for the next leap. Up to now, uncertainty came from nature—weather, markets, geology, luck. But in strategic settings, uncertainty comes from other rational players. Their choices affect your outcomes, and your choices affect theirs.</p>
+<p>This creates a new layer of complexity: each player must consider what others know, believe, and plan to do. Expected value still matters, but beliefs are now about the actions of others, not just random events. Decision trees remain useful, but now they include multiple decision‑makers, each optimizing their own payoff. These are the foundations of game theory—the study of rational interaction. The rest of the book builds from this foundation.</p>
 
 
 </section>
@@ -612,7 +703,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

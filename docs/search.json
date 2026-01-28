@@ -214,9 +214,69 @@
     "href": "index.html",
     "title": "Applied Game Theory",
     "section": "",
-    "text": "GAME THEORY",
+    "text": "0.1 Decision‑Making Begins with One Rational Player\nEvery day, whether we notice it or not, we make decisions: which route to take to school, whether to buy a coffee now or later, or whether to take an umbrella in case of rain. Some decisions are trivial; others—like choosing an investment, negotiating a contract, or launching a new product—have consequences that matter. Yet all of them share a common feature: we choose an action without fully knowing what the world will deliver in return.\nThis book introduces a systematic way to think about such choices. We begin with the simplest setting—a single decision‑maker facing a well‑defined problem—and gradually build toward strategic environments, where multiple rational individuals interact. The goal is to build a foundation strong enough to support the more complex ideas of game theory, while ensuring the logic feels natural and intuitive.\nGame theory ultimately studies how multiple decision‑makers interact, but the journey starts with just one of them. Before we analyze competition, negotiation, or conflict, we must first understand what it means for a lone decision‑maker to behave rationally.\nIn this book, a decision‑maker is rational if:\nAt its core, rationality is about consistency, not genius. A rational person can be misinformed, unlucky, optimistic, or pessimistic—but given what they believe and what they want, their decisions follow a coherent rule.",
     "crumbs": [
-      "GAME THEORY"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Decision‑Making Begins with One Rational Player</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#a-first-example",
+    "href": "index.html#a-first-example",
+    "title": "Applied Game Theory",
+    "section": "0.2 A First Example",
+    "text": "0.2 A First Example\nConsider whether Tesla builds a new plant, expands an existing one, or does nothing. Even before uncertainty is added, a rational Tesla executive must:\n\nIdentify the available actions.\nUnderstand what consequences each action might produce.\nChoose the action that best serves the firm’s objective.\n\nThis simple structure—actions → consequences → choice—is the backbone of rational decision theory.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Decision‑Making Begins with One Rational Player</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#decisions-almost-always-involve-uncertainty",
+    "href": "index.html#decisions-almost-always-involve-uncertainty",
+    "title": "Applied Game Theory",
+    "section": "0.3 Decisions Almost Always Involve Uncertainty",
+    "text": "0.3 Decisions Almost Always Involve Uncertainty\nOf course, most decisions are not made in a world of certainties. Tesla does not know future market conditions. A restaurant-goer does not know if the meal will be good. A landowner considering a drilling offer cannot be sure whether gas lies beneath her property.\nUncertainty enters because: - The world contains randomness. - We lack information. - Other people make unpredictable choices.\nTo handle uncertainty rationally, we need a way to quantify it. This leads us to probability and the expected value.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Decision‑Making Begins with One Rational Player</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#expected-value-a-tool-for-rational-choice-under-uncertainty",
+    "href": "index.html#expected-value-a-tool-for-rational-choice-under-uncertainty",
+    "title": "Applied Game Theory",
+    "section": "0.4 Expected Value: A Tool for Rational Choice Under Uncertainty",
+    "text": "0.4 Expected Value: A Tool for Rational Choice Under Uncertainty\nWhen outcomes are uncertain, rational decision‑making requires comparing lotteries, gambles, or probabilistic scenarios. The simplest such comparison uses the Expected Value (EV)\nThe expected value of an uncertain outcome is the probability‑weighted average of all possible payoffs. For example, rolling a die with payoffs \\(v = \\{ −10, −10, −10, +10, +10, +50\\}\\) has an EV of about 6.66. Two players flipping coins in a matching game both have an EV of zero. EV’s matter because they allow us to:\n\nSummarize uncertain choices with a single number.\nCompare and rank decisions.\nChoose the action with the highest average payoff.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Decision‑Making Begins with One Rational Player</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#decision-trees-visualizing-sequential-decisions",
+    "href": "index.html#decision-trees-visualizing-sequential-decisions",
+    "title": "Applied Game Theory",
+    "section": "0.5 Decision Trees: Visualizing Sequential Decisions",
+    "text": "0.5 Decision Trees: Visualizing Sequential Decisions\nMany decisions unfold over time. New information becomes available, new options appear, and uncertainty resolves step by step. To analyze these scenarios, we use decision trees. A decision tree contains:\n\nDecision nodes (where the player chooses).\nChance nodes (where uncertainty resolves).\nPayoff endpoints (final outcomes).\n\nTo solve them, we use backward induction:\n\nStart at the right side of the tree.\nCompute EV at each chance node.\nChoose the best branch at each decision node.\nContinue backward until reaching the first decision.\n\nThis method, also called folding back, ensures that a rational player makes the best decision at each step—even before the uncertainty is resolved.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Decision‑Making Begins with One Rational Player</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#from-individual-decisions-to-strategic-interaction",
+    "href": "index.html#from-individual-decisions-to-strategic-interaction",
+    "title": "Applied Game Theory",
+    "section": "0.6 From Individual Decisions to Strategic Interaction",
+    "text": "0.6 From Individual Decisions to Strategic Interaction\nOnce we master single‑player decisions under uncertainty, we are ready for the next leap. Up to now, uncertainty came from nature—weather, markets, geology, luck. But in strategic settings, uncertainty comes from other rational players. Their choices affect your outcomes, and your choices affect theirs.\nThis creates a new layer of complexity: each player must consider what others know, believe, and plan to do. Expected value still matters, but beliefs are now about the actions of others, not just random events. Decision trees remain useful, but now they include multiple decision‑makers, each optimizing their own payoff. These are the foundations of game theory—the study of rational interaction. The rest of the book builds from this foundation.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Decision‑Making Begins with One Rational Player</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#decisionmaking-begins-with-one-rational-player",
+    "href": "index.html#decisionmaking-begins-with-one-rational-player",
+    "title": "Applied Game Theory",
+    "section": "",
+    "text": "They have well‑defined preferences about outcomes.\nThey choose the action that leads to the most preferred available outcome.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Decision‑Making Begins with One Rational Player</span>"
     ]
   }
 ]
