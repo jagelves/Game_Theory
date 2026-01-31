@@ -101,7 +101,7 @@ Choices are made from a set of actions, and each action leads to a certain outco
 
 Examples:
 Choosing a job offer → income, work environment, lifestyle changes
-Choosing what to buy → different bundles of goods
+Choosing what to buy →  different bundles of goods
 Choosing a route → total travel time
 
 Outcomes can be simple or complicated, but the key idea is that decisions matter because they lead to different results.
